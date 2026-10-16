@@ -13,7 +13,7 @@ cd backend
 pip install -r requirements.txt
 cp .env.example .env
 # Điền DEEPSEEK_API_KEY vào file .env
-uvicorn main:app --reload --host 0.0.0.0 --port 8000
+uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 
 ## Cách chạy Frontend
 
@@ -30,7 +30,7 @@ npm run dev
 
 ## Nhóm thực hiện
 
-Nhóm Greater Will - Cuộc thi R&D to Startup 2026
+Nhóm Greater Will 
+
 - Dương Minh Quân (Nhóm trưởng, Tech Lead)
-- Minh Ngọc (Business)
 - Từ Vĩnh Quý (Design)

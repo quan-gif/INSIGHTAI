@@ -1,8 +1,8 @@
 from fastapi import APIRouter, UploadFile, File, HTTPException, Depends
-from models.schemas import AnalyzeResponse, SentimentResult, ReviewRequest
-from services.nlp_service import SentimentAnalyzer
-from services.deepseek_service import DeepSeekService
-from utils.helpers import read_reviews_from_csv, handle_error, validate_reviews
+from app.models.schemas import AnalyzeResponse, SentimentResult, ReviewRequest
+from app.services.nlp_service import SentimentAnalyzer
+from app.services.deepseek_service import DeepSeekService
+from app.utils.helpers import read_reviews_from_csv, handle_error, validate_reviews
 from typing import List
 import logging
 
